@@ -1,3 +1,65 @@
+/*Fuentes*/
+
+
+
+
+header * {
+  box-sizing: border-box;
+}
+header {
+  background-image: url(https://onelargepopcornplease.files.wordpress.com/2017/07/rick-morty-cover.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100rem;
+  height: 15rem;
+  flex-shrink: 50%;
+  padding-top: 0px;
+  position: relative;
+  max-width: 100%;
+  max-height: 50%;
+}
+
+h1 * {
+  box-sizing: border-boxf;
+}
+h1 {
+  color: #3d3b3b;
+  text-align: center;
+  font: 600 40px "Inter", sans-serif;
+  position: relative;
+  flex-shrink: 50%;
+  
+}
+
+button,
+button * {
+    padding: 1rem;
+    border-radius: 8rem;
+    border-color: #36D3DD;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #36D3DD;
+    color: #3d3b3b;
+
+}
+
+.random-facts {
+    position: absolute;
+    right: 0;
+}
+
+select,
+select *{
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 8rem;
+    border-color: #36D3DD;
+    padding: .8rem;
+}
+
 ul {
     display: flex;
     justify-content: center; /* Alineación horizontal al centro */
