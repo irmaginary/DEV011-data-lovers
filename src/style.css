@@ -30,16 +30,24 @@ h1 {
 
 button,
 button * {
-    padding: 1rem;
-    border-radius: 8rem;
-    border-color: #36D3DD;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #36D3DD;
-    color: #3d3b3b;
+  padding: 0.8rem;
+  border-radius: 8rem;
+  border-color: #10e32185;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #10e321;
+  color: #3d3b3b;
+}
 
+@media (max-width: 768px) {
+  .reset {
+    /*width: 13%;
+    height: 3em;*/
+    font-size: 14px;
+    padding: 5px 10px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -63,16 +71,16 @@ select * {
 }
 
 ul {
-    display: flex;
-    justify-content: center; /* Alineación horizontal al centro */
-    align-items: flex-start; /* Alineación vertical al inicio */
-    gap: 30px;/* Espacio de 40 píxeles entre elementos secundarios */
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center; /* Alineación horizontal al centro */
+  align-items: flex-start; /* Alineación vertical al inicio */
+  gap: 30px; /* Espacio de 40 píxeles entre elementos secundarios */
+  flex-wrap: wrap;
 }
 
 .personaje {
-border: 1px solid #ccc;
-border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .personaje {
@@ -84,34 +92,34 @@ border: 1px solid lightgray;
 box-shadow: 2px 2px #d3d3d3d1;
 border-radius:15px;
 font-family: sans-serif;
-text-overflow: ellipsis;
 }
 
 .personaje img {
-max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
-height: auto; /* Asegura que la altura se ajuste automáticamente para mantener la proporción */
+  max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
+  height: auto; 
+  width: auto;/* Asegura que la altura se ajuste automáticamente para mantener la proporción */
 }
 
 .personaje h2 {
-text-align:center;
-font-size: 1.5 em;
-padding: 10px 10px 0 10px;
+  text-align: center;
+  font-size: 1.5 em;
+  padding: 10px 10px 0 10px;
 }
 
 .personaje h3 {
-    text-align:center;
-    font-size: 1 em;
-    padding: 5px;
+  text-align: center;
+  font-size: 1 em;
+  padding: 5px;
 }
 
 .info {
-    display:flex;
-    text-align:center;
-    justify-content:space-around;
-    font-size: 12px;
-    padding: 10px;
-    flex-flow: row; 
-    background-color: rgb(240, 248, 247);
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 12px;
+  padding: 10px;
+  flex-flow: row;
+  background-color: rgb(240, 248, 247);
 }
 
 footer {
