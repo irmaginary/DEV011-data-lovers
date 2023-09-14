@@ -20,21 +20,23 @@
       </h1>
     </header>
 
-    <!--Botones de filtrado-->
-    <div class="botones">
-      <select data-testid="select-filter" name="especie">
-        <option value="value1">Humano</option>
-        <option value="value2">Alien</option>
-        <option value="value 3">Humanoide</option>
-      </select>
-      <select data-testid="select-sort" id="name">
-        <option value="asc">A-Z</option>
-        <option value="desc">Z-A</option>
-      </select>
-      <button class="reset">Reset</button>
+<!--Botones de filtrado-->
+  <div class="botones">
 
-      <button class="random-facts">Random facts</button>
-    </div>
+           Filtrar por 
+    <select data-testid="select-filter" name="especie">
+    <option value="value1">Humano</option>
+    <option value="value2" selected>Alien</option>
+  </select>
+  <select data data-testid="select-sort" id="name">
+    <option value="asc">A-Z</option>
+    <option value="desc">Z-A</option>
+  </select>
+  <button class="reset">Reset</button>
+  
+  <button class="random-facts">Random facts</button>
+
+  </div>
 
 <div id="root"> 
   <ul>
