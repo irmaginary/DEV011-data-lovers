@@ -71,54 +71,55 @@ select * {
 }
 
 ul {
-    display: flex;
-    justify-content: center; /* Alineación horizontal al centro */
-    align-items: flex-start; /* Alineación vertical al inicio */
-    gap: 30px;/* Espacio de 40 píxeles entre elementos secundarios */
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: center; /* Alineación horizontal al centro */
+  align-items: flex-start; /* Alineación vertical al inicio */
+  gap: 30px; /* Espacio de 40 píxeles entre elementos secundarios */
+  flex-wrap: wrap;
 }
 
 .personaje {
-border: 1px solid #ccc;
-border-radius: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .personaje {
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-width: auto;
-border: 1px solid lightgray;
-box-shadow: 2px 2px #d3d3d3d1;
-border-radius:15px;
-font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
 }
 
 .personaje img {
-max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
-height: auto; /* Asegura que la altura se ajuste automáticamente para mantener la proporción */
+  max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
+  height: auto; 
+  width: auto;/* Asegura que la altura se ajuste automáticamente para mantener la proporción */
 }
 
 .personaje h2 {
-text-align:center;
-font-size: 1.5 em;
-padding: 10px 10px 0 10px;
+  text-align: center;
+  font-size: 1.5 em;
+  padding: 10px 10px 0 10px;
 }
 
 .personaje h3 {
-    text-align:center;
-    font-size: 1 em;
-    padding: 5px;
+  text-align: center;
+  font-size: 1 em;
+  padding: 5px;
 }
 
 .info {
-    display:flex;
-    text-align:center;
-    justify-content:space-around;
-    font-size: 12px;
-    padding: 10px;
-    flex-flow: row; 
-    background-color: rgb(240, 248, 247);
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  font-size: 12px;
+  padding: 10px;
+  flex-flow: row;
+  background-color: rgb(240, 248, 247);
 }
 
 footer {
