@@ -126,3 +126,17 @@ footer {
   background-color: rgb(246, 250, 250);
   font-size: 10px;
 }
+
+
+/* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
+@media only screen and (max-width : 720px) {
+  .personaje {
+    width: 50%;
+  }     
+}
+
+@media (max-width : 480px) {
+    .personaje {
+      width: 100%;
+    }     
+  }
