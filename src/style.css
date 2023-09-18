@@ -29,7 +29,6 @@ h1 {
   font: 600 40px "Inter", sans-serif;
   position: relative;
   flex-shrink: 50%;
-  
 }
 
 button,
@@ -43,7 +42,6 @@ button * {
     margin-right: 10px;
     background-color: #36D3DD;
     color: #3d3b3b;
-
 }
 
 .random-facts {
@@ -86,6 +84,7 @@ border: 1px solid lightgray;
 box-shadow: 2px 2px 8px 4px #d3d3d3d1;
 border-radius:15px;
 font-family: sans-serif;
+text-overflow: ellipsis;
 }
 
 .personaje img {
@@ -134,5 +133,5 @@ footer {
 @media (max-width : 480px) {
     .personaje {
       width: 100%;
-    }     
-  }
+  }     
+}
