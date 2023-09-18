@@ -30,24 +30,16 @@ h1 {
 
 button,
 button * {
-  padding: 0.8rem;
-  border-radius: 8rem;
-  border-color: #10e32185;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
-  background-color: #10e321;
-  color: #3d3b3b;
-}
+    padding: 1rem;
+    border-radius: 8rem;
+    border-color: #36D3DD;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #36D3DD;
+    color: #3d3b3b;
 
-@media (max-width: 768px) {
-  .reset {
-    /*width: 13%;
-    height: 3em;*/
-    font-size: 14px;
-    padding: 5px 10px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -92,6 +84,7 @@ border: 1px solid lightgray;
 box-shadow: 2px 2px #d3d3d3d1;
 border-radius:15px;
 font-family: sans-serif;
+text-overflow: ellipsis;
 }
 
 .personaje img {
@@ -137,5 +130,5 @@ footer {
 @media (max-width : 480px) {
     .personaje {
       width: 100%;
-    }     
-  }
+  }     
+}
