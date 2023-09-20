@@ -5,7 +5,13 @@
     <meta charset="utf-8">
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
+
+    <!--Fuentes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Rock+Salt&display=swap" rel="stylesheet">
   </head>
+  
   <body
     style="
       margin-top: 0px;
@@ -15,23 +21,26 @@
     "
   >
     <header>
-      <h1 style="margin-top: 0px; margin-bottom: 0px; top: 100px">
+      <h1 style="margin-top: 0px; margin-bottom: 0px; top: 25px">
         Rick & Morty repository
       </h1>
     </header>
 
     <!--Botones de filtrado-->
     <div class="botones">
+      <label for="select-filter">Filter by </label>
       <select data-testid="select-filter" name="especie">
-        <option value="value1">Humano</option>
+        <option value="value1">Human</option>
         <option value="value2">Alien</option>
-        <option value="value 3">Humanoide</option>
+        <option value="value 3">Humanoid</option>
       </select>
+
+      <label for="select-sort">Choose order</label>
       <select data-testid="select-sort" id="select-sort">
         <option value="asc">A-Z</option>
         <option value="desc">Z-A</option>
       </select>
-      <button class="reset">Buscar</button>
+      <button class="reset">Search</button>
       <button class="reset">Reset</button>
       <button class="reset">Random facts</button>
     </div>
@@ -46,15 +55,15 @@
               src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg"
             />
           </div>
-          <h3>Especie: <span itemscope itemprop="species">Human</span></h3>
+          <h3>Specie: <span itemscope itemprop="species">Human</span></h3>
           <div class="info">
             <div>
-              <div>Tipo: <span itemprop="type">Ninguno</span></div>
+              <div>Type: <span itemprop="type">Ninguno</span></div>
               <div>Status: <span itemprop="status">Alive</span></div>
             </div>
             <div>
               <div>Gender: <span itemprop="gender">Male</span></div>
-              <div>Origen: <span itemprop="origin"></span></div>
+              <div>Origin: <span itemprop="origin"></span></div>
             </div>
           </div>
         </li>
@@ -64,7 +73,8 @@
   </ul>
 </div>
 <footer class="footer">
- Derechos reservados
+ Derechos reservados 2023
+ Amparo Madeth & Irma Solba 
 </footer>
 <script src="main.js" type="module"></script>
   </body>

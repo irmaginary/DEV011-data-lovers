@@ -1,5 +1,16 @@
 /*Fuentes*/
 
+  @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Rock+Salt&display=swap');
+
+
+/*html * {
+  background-color: rgba(0, 0, 0, 0.767);
+}*/
+html * {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 header * {
   box-sizing: border-box;
 }
@@ -19,26 +30,37 @@ header {
 
 h1 * {
   box-sizing: border-boxf;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  top: 10px;
 }
 h1 {
-  color: #3d3b3b;
+  color: #3d00ff;
   text-align: center;
-  font: 600 40px "Inter", sans-serif;
+  font: 600 50px 'Rock Salt', cursive;
   position: relative;
-  flex-shrink: 50%;
+  flex-shrink: 100%;
+  
 }
 
 button,
 button * {
     padding: 1rem;
     border-radius: 8rem;
-    border-color: #36D3DD;
+    border: none;
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-right: 10px;
-    background-color: #36D3DD;
-    color: #3d3b3b;
+    background-color: #57dd36;
+    color: #ffffff;
+    cursor: pointer;
+    transition: box-shadow 0.3s;
+
+    .button:hover {
+      background-color: #219804;
+      box-shadow: 0 0 10px rgba(48, 241, 23, 0.711);
+    }
 }
 
 @media (max-width: 768px) {
@@ -57,7 +79,7 @@ select * {
   margin-left: 10px;
   margin-right: 10px;
   border-radius: 8rem;
-  border-color: #36d3dd;
+  border-color: #57dd36;
   padding: 0.8rem;
 }
 
