@@ -6,23 +6,25 @@ import { sortData } from "./dataFunctions.js";
 
 //RENDERITEMS de la lista
 import data from "./data/rickandmorty/rickandmorty.js";
-const res = renderItems(data.results);
-//console.log("res: ", res);
 
-const ul = document.body.querySelector("#root ul");
-ul.innerHTML = res.join("");
 
 const ordenarresultados = sortData(data.results, 'name', 'asc');
 console.log(ordenarresultados);
 
 const selectsort = document.getElementById("select-sort");
 selectsort.addEventListener("change", function() {
-  console.log("Cambio");
+  //console.log("Cambio");
   const actualizarresultados = sortData(data.results, 'name', selectsort.value);
-  console.log(actualizarresultados);
-  return renderItems(actualizarresultados);
+  showItems(actualizarresultados)//COnvierte en html y se agrega al DOM
+  //console.log(actualizarresultados);
+ // return renderItems(actualizarresultados);
 } )
-
+function showItems(results){ //Convierte los resultados en li y los agrega el DOM como contenido del ul
+  const res = renderItems(results); //convierte resultados en li
+  const ul = document.body.querySelector("#root ul"); //busca el contenido por los li calculados
+  ul.innerHTML = res.join(""); //reemplaza los resultados
+}
+showItems(data.results)//muestra todos los datos por defecto sin ningún orden en específico
 
 
 //const selectfilter = document.getElementById("select-filter");
