@@ -1,4 +1,4 @@
-import { example } from "./dataFunctions.js";
+import { filtrarData} from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import { sortData } from "./dataFunctions.js";
 
@@ -19,12 +19,21 @@ selectsort.addEventListener("change", function() {
   //console.log(actualizarresultados);
  // return renderItems(actualizarresultados);
 } )
-function showItems(results){ //Convierte los resultados en li y los agrega el DOM como contenido del ul
+
+function showItems(results){ //Convierte los resultados en li y los agrega al DOM como contenido del ul
   const res = renderItems(results); //convierte resultados en li
   const ul = document.body.querySelector("#root ul"); //busca el contenido por los li calculados
   ul.innerHTML = res.join(""); //reemplaza los resultados
 }
 showItems(data.results)//muestra todos los datos por defecto sin ningún orden en específico
+
+const selectfilter = document.body.querySelector("[name='especie']")
+selectfilter.addEventListener("change", function (){
+  const especie = selectfilter.value
+  const result = filtrarData(data.results,especie)
+  showItems(result);
+})
+
 
 
 //const selectfilter = document.getElementById("select-filter");
