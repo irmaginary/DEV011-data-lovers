@@ -1,12 +1,10 @@
-// estas funciones son de ejemplo
+// Función filtrar por especie
 
-export const example = () => {
-  return "example";
+export function filtrarData(data,especie){
+  const  result = data.filter(function(item) {return item.species === especie})
+  return result;
 };
 
-export const anotherExample = () => {
-  return [];
-};
 
 //SORT-DATA
 export function sortData(data, sortBy, sortOrder) {
@@ -20,11 +18,5 @@ export function sortData(data, sortBy, sortOrder) {
   }
 };
 
-//FUNCION FILTRAR POR CATEGORIA "ESPECIE: HUMANO"
-//Definir función filter data
-//export const filterData= (data, filterBy, value) => {
-//return data.filter(item => item[filterBy] === value);
-//}
-//Filtrar cataegoría "species"
-//const filtercat= filterData (data, 'species', 'human');
-//console.log(filtercat);
+
+
