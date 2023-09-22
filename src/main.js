@@ -54,3 +54,8 @@ showItems(data.results)//muestra todos los datos por defecto sin ningún orden e
 
 //console.log(example, renderItems, data);
 
+
+
+
+
+
