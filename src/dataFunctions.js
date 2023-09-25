@@ -1,10 +1,16 @@
 // Función filtrar por especie
 
-export function filtrarData(data,especie){
-  const  result = data.filter(function(item) {return item.species === especie})
+export function filtrarData(data, especie) {
+  if (especie === "todos") {  // especie === ""
+    return data; // Si especie es null, undefined o una cadena vacía, devuelve data sin filtrar.
+  }
+  
+  const result = data.filter(function(item) {
+    return item.species === especie;
+  });
+  
   return result;
-};
-
+}
 
 //SORT-DATA
 export function sortData(data, sortBy, sortOrder) {
