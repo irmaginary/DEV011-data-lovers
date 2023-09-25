@@ -1,7 +1,6 @@
 // estas funciones son de ejemplo
 
 export const renderItems = (items) => {
-  console.log(items, "*****");
   const res = [];
   items.forEach((item) => 
   {
@@ -27,5 +26,3 @@ export const renderItems = (items) => {
 
 return res;
 };
-
-
