@@ -4,7 +4,8 @@ header * {
   box-sizing: border-box;
 }
 header {
-  background-image: url(https://onelargepopcornplease.files.wordpress.com/2017/07/rick-morty-cover.jpg);
+  background-image: url(https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/8/AmazonStores/A1AM78C64UM0Y8/88a9732d54ce1de3a48e9c09d2f58fed.w3000.h600._CR0%2C0%2C3000%2C600_SX1500_.jpg);
+  background-color: rgb(152, 189, 185);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
@@ -20,6 +21,8 @@ header {
 h1 * {
   box-sizing: border-boxf;
 }
+
+
 h1 {
   color: #3d3b3b;
   text-align: center;
@@ -52,6 +55,7 @@ button * {
   }
 }
 
+
 select,
 select * {
   margin-left: 10px;
@@ -62,10 +66,11 @@ select * {
 }
 
 ul {
+  padding: 0 10px 0 10px;
   display: flex;
   justify-content: center; /* Alineación horizontal al centro */
   align-items: flex-start; /* Alineación vertical al inicio */
-  gap: 30px; /* Espacio de 40 píxeles entre elementos secundarios */
+  gap: 25px; /* Espacio entre elementos secundarios */
   flex-wrap: wrap;
 }
 
@@ -84,6 +89,7 @@ box-shadow: 2px 2px 8px 4px #d3d3d3d1;
 border-radius:15px;
 font-family: sans-serif;
 text-overflow: ellipsis;
+align-self: stretch;
 }
 
 .personaje img {
@@ -121,14 +127,17 @@ footer {
 
 
 /* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
-@media only screen and (max-width : 720px) {
+@media (max-width : 768px) {
+
   .personaje {
-    width: 50%;
+    width: 40% !important;
   }     
 }
 
 @media (max-width : 480px) {
     .personaje {
-      width: 100%;
-  }     
+      width: 100% !important;
+  }   
+  
+  
 }
