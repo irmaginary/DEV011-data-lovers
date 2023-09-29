@@ -10,19 +10,19 @@ export const renderItems = (items) => {
         <div>
           <img itemprop="image" src="${item.image}">
         </div>
-        <h3>Especie: <span itemscope itemprop="species">${item.species}</span></h3>
+        <h3>Species: <span itemscope itemprop="species">${item.species}</span></h3>
         <div class="info">
           <div>
-            <div>Tipo: <span itemprop="type">${item.type}</span></div>
+            <div>Type: <span itemprop="type">${item.type}</span></div>
             <div>Status: <span itemprop="status">${item.status}</span></div>
           </div>
           <div>
             <div>Gender: <span itemprop="gender">${item.gender}</span></div>
-            <div>Origen: <span itemprop="origin">${item.origin.name}</span></div>
+            <div>Origin: <span itemprop="origin">${item.origin.name}</span></div>
           </div>
         </div>
     </li>`);
   });
 
-return res;
+  return `<ul>${res.join("")}</ul>`;
 };

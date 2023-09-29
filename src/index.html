@@ -6,25 +6,17 @@
     <title>Data Lovers</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body
-    style="
-      margin-top: 0px;
-      margin-right: 0px;
-      margin-left: 0px;
-      margin-bottom: 0px;
-    "
-  >
+  <body>
     <header>
-      <h1 style="margin-top: 0px; margin-bottom: 0px; top: 100px">
-        
-      </h1>
+      <h1 style="margin-top: 0px; margin-bottom: 0px; top: 100px"> </h1>
     </header>
 
     <!--Botones de filtrado-->
     <div class="botones">
-      <select data-testid="select-filter" name="especie">
-        <option value="todos">Especies</option>
-        <option value="Human">Humano</option>
+      <label for="select-filter">Filter by species:</label>
+      <select data-testid="select-filter" name="especie" id="select-filter">
+        <option value="todos">All</option>
+        <option value="Human">Human</option>
         <option value="Alien">Alien</option>
         <option value="Humanoid">Humanoide</option>
         <option value="Poopybutthole">Poopybutthole</option>
@@ -37,41 +29,16 @@
         <option value="Animal">Animal</option>
         <option value="unknown">Unknown</option>
       </select>
-      <select data-testid="select-sort" id="select-sort">
+      <label for="select-sort">Order:</label>
+      <select data-testid="select-sort" id="select-sort" name="select-sort">
         <option value="asc">A-Z</option>
         <option value="desc">Z-A</option>
       </select>
       <button class="reset">Reset</button>
       <button class="reset">Random facts</button>
     </div>
-
     <div id="root">
-      <ul>
-        <li class="personaje" itemscope itemtype="Personaje" style="width: 20%">
-          <h2 itemprop="name">Rick Sanchez</h2>
-          <div>
-            <img
-              itemprop="image"
-              src="https://raw.githubusercontent.com/Laboratoria/rick-and-morty-images/master/images/1.jpeg"
-            />
-          </div>
-          <h3>Especie: <span itemscope itemprop="species">Human</span></h3>
-          <div class="info">
-            <div>
-              <div>Tipo: <span itemprop="type">Ninguno</span></div>
-              <div>Status: <span itemprop="status">Alive</span></div>
-            </div>
-            <div>
-              <div>Gender: <span itemprop="gender">Male</span></div>
-              <div>Origen: <span itemprop="origin"></span></div>
-            </div>
-          </div>
-        </li>
-
-<div id="root"> 
-  <ul>
-  </ul>
-</div>
+    </div>
 <footer class="footer">
  Derechos reservados
 </footer>

@@ -29,8 +29,8 @@ selectsort.addEventListener("change", function() {
 //Mostrar resultados de la data filtrada
 function showItems(results){ //Convierte los resultados en li y los agrega al DOM como contenido del ul
   const res = renderItems(results); //convierte resultados en li
-  const ul = document.body.querySelector("#root ul"); //busca el contenido por los li calculados
-  ul.innerHTML = res.join(""); //reemplaza los resultados
+  const root = document.body.querySelector("#root"); //busca el contenido por los li calculados
+  root.innerHTML = res; //reemplaza los resultados
 }
 mostrarinicial()
 
