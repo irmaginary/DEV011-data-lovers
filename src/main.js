@@ -1,6 +1,8 @@
 import { filtrarData} from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import { sortData } from "./dataFunctions.js";
+import { computeStat } from "./dataFunctions.js";
+
 import data from "./data/rickandmorty/rickandmorty.js";
 
 //Data ordenada
@@ -45,34 +47,19 @@ selectfilter.addEventListener("change", function (){
 const botonReset = document.body.querySelector(".reset")
 botonReset.addEventListener("click", limpiar);
 
+//Llama al evento del botón Random Facts
+const randomFacts = document.querySelector(".random")
+randomFacts.addEventListener("click", function() {
+  const datagender = computeStat(data.results);
+  alert("¡Has seleccionado un dato random! En esta base de datos: " + datagender.male + " de los personajes son masculinos, " + datagender.female + " de los personajes son femeninos y " + datagender.unknown + " no tienen un género definido");
+
+//const datagender = computeStat(data.results);
+//console.log("personajes masculinos:", datagender.male);
+//console.log("personajes femeninos:", datagender.female);
+//console.log("genero desconocido:", datagender.unknown)
+});
 
 
-//const selectfilter = document.getElementById("select-filter");
-
-//EVENT LISTENER para Ordenar resultados alfabéticamemte
-//const selectOrden = document.getElementById("select-sort");
-//selectOrden.addEventListener("click", function () {
-//    const ordenSeleccionado = selectOrden.value;
-
-//res.sort ((a,b) => {
-//    const nameA = a.textContent.toUpperCase();
-//  const nameB =b .textContent.toUpperCase();
-//    if (ordenSeleccionado === "asc") {
-//  if (nameA < nameB) return -1;
-//  if (nameA > nameB) return 1;
-//} else if (ordenSeleccionado === "desc") {
-  //  if (nameA > nameB) return -1;
-    //if (nameA < nameB) return 1;
-//}
-//    return 0;
-
-//});
-
-//const ul = document.body.querySelector("#root ul");
-//ul.innerHTML = res.map(item => item.outerHTML).join(""); //reemplaza la información por el resultado, uniendo todos los arreglos.
-//});
-
-//console.log(example, renderItems, data);
 
 
 
