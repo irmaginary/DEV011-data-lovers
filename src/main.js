@@ -1,6 +1,8 @@
 import { filtrarData} from "./dataFunctions.js";
 import { renderItems } from "./view.js";
 import { sortData } from "./dataFunctions.js";
+import { computeStat } from "./dataFunctions.js";
+
 import data from "./data/rickandmorty/rickandmorty.js";
 
 //Data ordenada
@@ -45,7 +47,17 @@ selectfilter.addEventListener("change", function (){
 const botonReset = document.body.querySelector(".reset")
 botonReset.addEventListener("click", limpiar);
 
+//Llama al evento del botón Random Facts
+const randomFacts = document.querySelector(".random")
+randomFacts.addEventListener("click", function() {
+  const datagender = computeStat(data.results);
+  alert("¡Has seleccionado un dato random! En esta base de datos: " + datagender.male + " de los personajes son masculinos, " + datagender.female + " de los personajes son femeninos y " + datagender.unknown + " no tienen un género definido");
 
+//const datagender = computeStat(data.results);
+//console.log("personajes masculinos:", datagender.male);
+//console.log("personajes femeninos:", datagender.female);
+//console.log("genero desconocido:", datagender.unknown)
+});
 
 
 

@@ -1,15 +1,13 @@
 /*Fuentes*/
 
-  @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Rock+Salt&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Rock+Salt&display=swap");
 
 /*html * {
   background-color: rgba(0, 0, 0, 0.767);
 }*/
 html * {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
-
 
 header * {
   box-sizing: border-box;
@@ -37,30 +35,29 @@ h1 * {
 h1 {
   color: #3d00ff;
   text-align: center;
-  font: 600 50px 'Rock Salt', cursive;
+  font: 600 50px "Rock Salt", cursive;
   position: relative;
   flex-shrink: 100%;
-  
 }
 
 button,
 button * {
-    padding: 1rem;
-    border-radius: 8rem;
-    border: none;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
-    background-color: #57dd36;
-    color: #ffffff;
-    cursor: pointer;
-    transition: box-shadow 0.3s;
+  padding: 1rem;
+  border-radius: 8rem;
+  border: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: #57dd36;
+  color: #ffffff;
+  cursor: pointer;
+  transition: box-shadow 0.3s;
 
-    .button:hover {
-      background-color: #219804;
-      box-shadow: 0 0 10px rgba(48, 241, 23, 0.711);
-    }
+  .button:hover {
+    background-color: #219804;
+    box-shadow: 0 0 10px rgba(48, 241, 23, 0.711);
+  }
 }
 
 @media (max-width: 768px) {
@@ -97,21 +94,23 @@ ul {
 }
 
 .personaje {
-display:flex;
-flex-direction:column;
-justify-content:space-between;
-width: calc(20% - 5px); /* Para dividir en 3 columnas con un espacio de 30px entre ellas */
-border: 1px solid lightgray;
-box-shadow: 2px 2px 8px 4px #d3d3d3d1;
-border-radius:15px;
-font-family: sans-serif;
-text-overflow: ellipsis;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: calc(
+    20% - 5px
+  ); /* Para dividir en 3 columnas con un espacio de 30px entre ellas */
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+  border-radius: 15px;
+  font-family: sans-serif;
+  text-overflow: ellipsis;
 }
 
 .personaje img {
   max-width: 100%; /* Hace que la imagen tenga un ancho máximo del 100% del contenedor */
-  height: auto; 
-  width: auto;/* Asegura que la altura se ajuste automáticamente para mantener la proporción */
+  height: auto;
+  width: auto; /* Asegura que la altura se ajuste automáticamente para mantener la proporción */
 }
 
 .personaje h2 {
@@ -141,16 +140,15 @@ footer {
   font-size: 10px;
 }
 
-
 /* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
-@media only screen and (max-width : 720px) {
+@media only screen and (max-width: 720px) {
   .personaje {
     width: 50%;
-  }     
+  }
 }
 
-@media (max-width : 480px) {
-    .personaje {
-      width: 100%;
-  }     
+@media (max-width: 480px) {
+  .personaje {
+    width: 100%;
+  }
 }
