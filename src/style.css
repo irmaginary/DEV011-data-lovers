@@ -22,7 +22,6 @@ h1 * {
   box-sizing: border-boxf;
 }
 
-
 h1 {
   color: #3d3b3b;
   text-align: center;
@@ -54,7 +53,6 @@ button * {
     padding: 5px 10px;
   }
 }
-
 
 select,
 select * {
@@ -100,7 +98,7 @@ align-self: stretch;
 
 .personaje h2 {
   text-align: center;
-  font-size: 1.5 em;
+  font-size: 1 em;
   padding: 10px 10px 0 10px;
 }
 
