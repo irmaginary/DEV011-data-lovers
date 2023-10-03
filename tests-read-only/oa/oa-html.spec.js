@@ -88,6 +88,7 @@ describe('Uso de HTML semántico', () => {
         const previousFor = element.previousElementSibling.getAttribute('for');
         expect(previousFor).toBe(element.id);
       })
+      
       expect(select.length && label.length).toBeGreaterThan(0);
     })
 
