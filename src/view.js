@@ -10,7 +10,7 @@ export const renderItems = (items) => {
         <div>
           <img itemprop="image" src="${item.image}">
         </div>
-        <h3>Specie: <span itemscope itemprop="species">${item.species}</span></h3>
+        <h3>Species: <span itemscope itemprop="species">${item.species}</span></h3>
         <div class="info">
           <div>
             <div>Type: <span itemprop="type">${item.type}</span></div>
@@ -24,5 +24,5 @@ export const renderItems = (items) => {
     </li>`);
   });
 
-return res;
+  return `<ul>${res.join("")}</ul>`;
 };
