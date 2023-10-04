@@ -27,6 +27,34 @@ export function sortData(data, sortBy, sortOrder) {
   }
 }
 
+export function computeStat(data) {
+  const initialCounts = {
+    male: 0,
+    female: 0,
+    unknown: 0,
+  };
+
+  const datagender = data.reduce((counts, item) => {
+    const word = item.gender.toLowerCase();
+
+    if (word === "male") {
+      counts.male++;
+    } else if (word === "female") {
+      counts.female++;
+    } else if (word === "unknown") {
+      counts.unknown++;
+    }
+
+    return counts;
+  }, initialCounts);
+
+  // Convertir los valores a tipo "number" usando parseInt
+  datagender.male = parseInt(datagender.male);
+  datagender.female = parseInt(datagender.female);
+  datagender.unknown = parseInt(datagender.unknown);
+
+  return datagender;
+}
 //Función datos random (estadística)
 //export function computeStat(data) {
   //const sum = data.reduce((a, b) => a + b, 0);
@@ -121,34 +149,7 @@ export function sortData(data, sortBy, sortOrder) {
 
   return datagender;
 }*/
-export function computeStat(data) {
-  const initialCounts = {
-    male: 0,
-    female: 0,
-    unknown: 0,
-  };
 
-  const datagender = data.reduce((counts, item) => {
-    const word = item.gender.toLowerCase();
-
-    if (word === "male") {
-      counts.male++;
-    } else if (word === "female") {
-      counts.female++;
-    } else if (word === "unknown") {
-      counts.unknown++;
-    }
-
-    return counts;
-  }, initialCounts);
-
-  // Convertir los valores a tipo "number" usando parseInt
-  datagender.male = parseInt(datagender.male);
-  datagender.female = parseInt(datagender.female);
-  datagender.unknown = parseInt(datagender.unknown);
-
-  return datagender;
-}
 
 
 
