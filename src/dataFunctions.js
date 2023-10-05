@@ -9,15 +9,12 @@ export function filtrarData(data, especie) {
     return item.species === especie;
   });
 
-  return result; 
+  return result;
 }
-
-
-
 
 // Función SORT-DATA
 export function sortData(data, sortBy, sortOrder) {
-  console.log(sortOrder);
+  //console.log(sortOrder);
   if (sortOrder === "asc") {
     return data.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
   } else if (sortOrder === "desc") {
@@ -57,18 +54,18 @@ export function computeStat(data) {
 }
 //Función datos random (estadística)
 //export function computeStat(data) {
-  //const sum = data.reduce((a, b) => a + b, 0);
-  //const average = sum / data.lenght;
-  //const max = data.reduce((a, b) => Math.max(a, b), -Infinity);
-  //const min = data.reduce((a, b) => Math.min(a, b), Infinity);
+//const sum = data.reduce((a, b) => a + b, 0);
+//const average = sum / data.lenght;
+//const max = data.reduce((a, b) => Math.max(a, b), -Infinity);
+//const min = data.reduce((a, b) => Math.min(a, b), Infinity);
 
-  //console.log(sum);
-  //return {
-    //sum: sum,
-    //average: average,
-    //max: max,
-    //min: min,
-  //};
+//console.log(sum);
+//return {
+//sum: sum,
+//average: average,
+//max: max,
+//min: min,
+//};
 //}
 
 /*export function computeStat(data) {
@@ -149,9 +146,3 @@ export function computeStat(data) {
 
   return datagender;
 }*/
-
-
-
-
- 
-
