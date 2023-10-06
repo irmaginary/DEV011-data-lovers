@@ -1,24 +1,27 @@
 /*Fuentes*/
 
 @import url("https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Rock+Salt&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@700&family=Martian+Mono:wght@700&family=Roboto:ital,wght@0,100;0,300;0,700;1,100&family=Rock+Salt&display=swap');
 
 /*html * {
   background-color: rgba(0, 0, 0, 0.767);
 }*/
 html * {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffff;
+  background-color: rgb(27, 32, 36);
 }
 header {
-  box-sizing: border-box;
+  box-sizing: content-box;
 }
 header {
-  background-image: url(https://m.media-amazon.com/images/S/stores-image-uploads-na-prod/8/AmazonStores/A1AM78C64UM0Y8/88a9732d54ce1de3a48e9c09d2f58fed.w3000.h600._CR0%2C0%2C3000%2C600_SX1500_.jpg);
-  background-color: rgb(152, 189, 185);
+  background-image: url(https://wallpapers.com/images/hd/rick-and-morty-unamused-rick-agpuysmhk3lhdl4p.jpg);
+  background-color: rgb(27, 32, 36);
   background-size: 100% auto;
   background-repeat: no-repeat;
   background-position: center;
-  width: 100rem;
-  height: 15rem;
+  width: 100%;
+  height: 18rem;
   flex-shrink: 50%;
   padding-top: 0px;
   position: relative;
@@ -27,18 +30,25 @@ header {
 }
 
 h1 * {
-  box-sizing: border-boxf;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  top: 10px;
+  box-sizing: border-box;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 70px;
+  margin-left: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-right: 70px;
+  padding-left: 10px;
 }
 
 h1 {
-  color: #3d00ff;
-  text-align: center;
-  font: 600 50px "Rock Salt", cursive;
-  position: relative;
-  flex-shrink: 100%;
+  color: #57dd36;
+  background-color: transparent;
+  text-align: left;
+  text-shadow: 2px #92f57ade;
+  font: 700 35px "Martian Mono", bold;
+  position: sticky;
+  flex-shrink: 50%;
 }
 
 button,
@@ -57,7 +67,7 @@ button * {
 
   .button:hover {
     background-color: #219804;
-    box-shadow: 0 0 10px rgba(48, 241, 23, 0.711);
+    box-shadow: 40px rgba(48, 241, 23, 0.711);
   }
 }
 
@@ -85,9 +95,10 @@ ul {
   padding: 0 10px 0 10px;
   display: flex;
   justify-content: center; /* Alineación horizontal al centro */
-  align-items: flex-start; /* Alineación vertical al inicio */
-  gap: 25px; /* Espacio entre elementos secundarios */
+  align-items: stretch; /* Alineación vertical al inicio */
+  gap: 30px; /* Espacio entre elementos secundarios */
   flex-wrap: wrap;
+  align-content: space-around;
 }
 
 .personaje {
@@ -101,7 +112,7 @@ flex-direction:column;
 justify-content:space-between;
 width: calc(20% - 5px); /* Para dividir en 3 columnas con un espacio de 30px entre ellas */
 border: 1px solid lightgray;
-box-shadow: 2px 2px 8px 4px #d3d3d3d1;
+box-shadow: 0px 0px 4px 4px #d3d3d3d1;
 border-radius:15px;
 font-family: sans-serif;
 text-overflow: ellipsis;
@@ -117,13 +128,13 @@ align-self: stretch;
 .personaje h2 {
   text-align: center;
   font-size: 1 em;
-  padding: 10px 10px 0 10px;
+  padding: 8px 8px 0 8px;
 }
 
 .personaje h3 {
   text-align: center;
   font-size: 1 em;
-  padding: 5px;
+  padding: 7px;
 }
 
 .info {
@@ -132,25 +143,29 @@ align-self: stretch;
   justify-content: space-around;
   font-size: 12px;
   padding: 10px;
+  border-radius: 15px;
   flex-flow: row;
-  background-color: rgb(240, 248, 247);
+  background-color: rgb(27, 32, 36);
 }
 
 footer {
-  background-color: rgb(246, 250, 250);
+  color: #57dd36;
+  font-family: 10px "Martian mono", bold;
+  background-color: rgb(27, 32, 36);
   font-size: 10px;
+  position: absolute;
 }
 
 /* Cuando la pantalla es menor a 900px  (tablets y teléfonos inteligentes)*/
 @media (max-width : 768px) {
 
   .personaje {
-    width: 40% !important;
+    width: 35% !important;
   }     
 }
 
-@media (max-width : 480px) {
+@media (max-width : 390px) {
     .personaje {
-      width: 100% !important;
+      width: 80% !important;
   } 
 }
