@@ -17,11 +17,9 @@ export function sortData(data, sortBy, sortOrder) {
   //console.log(sortOrder);
   if (sortOrder === "asc") {
     return data.sort((a, b) => a[sortBy].localeCompare(b[sortBy]));
-  } else if (sortOrder === "desc") {
+  } if (sortOrder === "desc") {
     return data.sort((a, b) => b[sortBy].localeCompare(a[sortBy]));
-  } else {
-    throw new Error('El sortOrder debe ser "asc" o "desc".');
-  }
+  } 
 }
 
 export function computeStat(data) {
